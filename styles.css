@@ -1,0 +1,28 @@
+*{
+    font-family: 'Alegreya Sans';font-size: 22px;
+}
+.container{
+    padding: 10px;
+}
+h3{
+   text-align: center;
+}
+.task{
+    width: 50%;
+    height:40px;
+    border-radius: 4px;
+    border-color: #dbd8d8;
+    color: #c4c1c1;
+    padding: 10px;
+    margin-left: 25%;
+    
+}
+button{
+    background-color: rgb(252, 173, 186);
+    border: none;
+    border-radius: 4px;
+    width: 70px;
+    height: 40px;
+    color: white;
+    margin-left: 48%;
+}
