@@ -26,3 +26,6 @@ button{
     color: white;
     margin-left: 48%;
 }
+ul{
+    list-style: none;
+}
