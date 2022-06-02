@@ -17,6 +17,14 @@ h3{
     margin-left: 25%;
     
 }
+.add{
+    margin-left: 48%;
+}
+#editing{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+}
 button{
     background-color: rgb(252, 173, 186);
     border: none;
@@ -24,7 +32,6 @@ button{
     width: 70px;
     height: 40px;
     color: white;
-    margin-left: 48%;
 }
 ul{
     list-style: none;

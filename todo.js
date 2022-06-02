@@ -6,10 +6,13 @@ var task = $('.task');
 var add = $("#addButton");
 $(add).click(function(){
     for (var i = 0; i < task.length; i++) {
-        console.log(task[i].value);}
+        console.log(task[i].value);
+        let x = Math.floor((Math.random() * 1000) + 1);
+        document.getElementById("ID").innerHTML = x;
+        
+    }
 
-let x = Math.floor((Math.random() * 1000) + 1);
-document.getElementById("ID").innerHTML = x;
+
     
 $("#incomplete").val(
     $("#incomplete").val() +
@@ -20,11 +23,6 @@ $("#incomplete").val(
 
     localStorage.setItem("Task:", task)
 })
-
-
-//  $("#isDone").click(function(){
- 
-//  })
 
  $("#deleteButton").click(function(){
     $("#incomplete").val("");

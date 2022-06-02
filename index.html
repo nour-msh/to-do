@@ -15,19 +15,41 @@
                 <textarea id="title" class="task" placeholder="Task Title"></textarea>
                 <textarea id="desc" class="task" placeholder="Task Description"></textarea>
                 <input id="point" class="task" placeholder="Task Point"></br>
-                <button id="addButton">Add</button>
+                <button class="add" id="addButton">Add</button>
             </p>
 
             <h3>Incomplete Tasks</h3>
             <ul id="incomplete-tasks">
             <li class="list">
                 <textarea class="task" id="incomplete"></textarea>
-                
-                <button id="editButton">Edit</button>
-                <button id="isDone">Done</button>
-                <button id="deleteButton">Delete</button>
-                
+                <div id="editing">
+                    <button id="editButton">Edit</button>
+                    <button id="isDone">Done</button>
+                    <button id="deleteButton">Delete</button>
+                    </div>
             </li>
+            </ul>
+
+            <ul id="incomplete-tasks">
+                <li class="list">
+                    <textarea class="task" id="incomplete"></textarea>
+                    <div id="editing">
+                    <button id="editButton">Edit</button>
+                    <button id="isDone">Done</button>
+                    <button id="deleteButton">Delete</button>
+                    </div>
+                </li>
+            </ul>
+
+            <ul id="incomplete-tasks">
+                <li class="list">
+                    <textarea class="task" id="incomplete"></textarea>
+                    <div id="editing">
+                        <button id="editButton">Edit</button>
+                        <button id="isDone">Done</button>
+                        <button id="deleteButton">Delete</button>
+                        </div> 
+                </li>
             </ul>
             
 
