@@ -14,22 +14,19 @@ $("#incomplete").val(
      " , description: "+$("#desc").val() +
      ", point: "+$("#point").val()
     );
+
+    localStorage.setItem("Task:", task)
 })
- localStorage.setItem("Task:", task)
 
+
+//  $("#isDone").click(function(){
  
-// var edit =$("#editButton");
-// var isDone =$("#isDone");
-// var remove=$("#deleteButton");
+//  })
 
-
-// $(edit).click(function(){
-//     $('li').attr('contenteditable','true');
-//  });
- 
-//  $(remove).click(function(){
-//     $('incomplete').remove();
-//  });
+ $("#deleteButton").click(function(){
+    $("#incomplete").val("");
+    localStorage.clear("Task:", task)
+});
 
 
 
