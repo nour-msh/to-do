@@ -1,4 +1,4 @@
-
+var id = $("ID");
 var title = $('#title');
 var desc = $('#desc');
 var point = $('#point');
@@ -7,10 +7,13 @@ var add = $("#addButton");
 $(add).click(function(){
     for (var i = 0; i < task.length; i++) {
         console.log(task[i].value);}
+
+let x = Math.floor((Math.random() * 1000) + 1);
+document.getElementById("ID").innerHTML = x;
     
 $("#incomplete").val(
     $("#incomplete").val() +
-    "Title: "+$("#title").val() + 
+    "ID: "+$("#ID").val()+ " ,Title: "+$("#title").val() + 
      " , description: "+$("#desc").val() +
      ", point: "+$("#point").val()
     );
@@ -27,6 +30,7 @@ $("#incomplete").val(
     $("#incomplete").val("");
     localStorage.clear("Task:", task)
 });
+
 
 
 
